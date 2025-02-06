@@ -20,7 +20,7 @@ function UserList() {
         <div>
             {
                 users.map((user, index) => (
-                        <UserCard key={index} />
+                        <UserCard key={index} { ...user } />
                     )
                 )
             }
